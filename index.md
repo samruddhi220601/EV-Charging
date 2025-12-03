@@ -1,1 +1,1 @@
-<iframe src="ev_chargers_popden_map.html" height ="845" width="95%"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
+<iframe src="ev_chargers_popden_map.html" height ="1005" width="105%"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
