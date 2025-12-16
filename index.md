@@ -21,7 +21,7 @@ Brief bullets of your workflow:
 <iframe src="ca_cars_per_hh_fisherjenks_counties_quality.png" height="550" width="10%"></iframe>
 <img
   src="ca_cars_per_hh_fisherjenks_counties_quality.png"
-  style="width:100%; max-width:1200px; height:auto; display:block; margin:0 auto;">
+  height="555" width="1605"></iframe>
 <img
   src="ev_chargers_orange_county.png"
-  style="width:100%; max-width:1200px; height:auto; display:block; margin:0 auto;">
+  height="555" width="1605"></iframe>
