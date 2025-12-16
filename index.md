@@ -1,6 +1,6 @@
 # Interlinking EV Charging Infrastructure with Urban Fabric of California
-Samruddhi Purohit
-Command Line GIS
+## Samruddhi Purohit
+## Command Line GIS
 
 ## Overview
 This project examines EV infrastructure and its linkage to Orange County’s employment geography. It opens with a national-to-regional scan of cars-per-household at the census-tract level, then narrows to Orange County to analyze charger deployment year by year (2021–2024) using county-level datasets. While the source data distinguish Shared, Shared Private, Level 1, Level 2, and DC Fast chargers (useful for future, finer analysis), this phase aggregates to total chargers to establish the big picture. Building on research that finds a direct correlation between charger locations and commercial zones, the study specifically tests the relationship between EV chargers and office locations in Orange County. To assess practical access for commuters, we evaluate walkable catchments around office sites using 5-, 10-, and 15-minute buffers, highlighting where workplace-proximate charging may influence adoption, parking behavior, and last-mile choices.
