@@ -22,7 +22,7 @@ Dropping rows with missing geographic coordinates or essential charger attribute
 
 Standardizing county names and charger attributes
 
-To contextualize charging infrastructure across California, the cleaned EV charger dataset was joined with county-level population density data. This population dataset came from a county geodatabase containing area, population totals, and derived density measures. A shared county name field was used to merge the two datasets, enabling the creation of maps showing spatial patterns of charger concentration normalized by the underlying population distribution across counties. 
+To contextualize charging infrastructure across California, the cleaned EV charger dataset was joined with county-level population density data. This population dataset came from a county geodatabase containing area, population totals, and derived density measures. A shared county name field was used to merge the two datasets, enabling the creation of maps showing spatial patterns of charger concentration normalized by the underlying population distribution across counties. To show the growth of EV Charging infrastructure with each county of Califonia, small multiples were used to show change from 2021 to 2024. 
 
 ### EV Chargers Buffer in Irvine, California: 
 This interactive map visualizes EV charging access relative to office locations using OpenStreetMap data obtained via OSMnx. The original dataset covered all of Orange County, but computing network-based walking isochrones for 5, 10, and 15 minutes around every office was slow. To keep analysis responsive while upholding policy relevance, the study zooms into Irvine. The reason for chooosing Irvine was its characteristic as an important highway-corridor having an employment cluster. This proved to be an ideal context to examine workplace-proximate charging.
@@ -39,7 +39,9 @@ Point layers: Location pins for EV charging stations and office sites (both deri
   height="655" width="805">
   
 ### EV Chargers/Population Density
-<iframe src="ev_chargers_popden_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
+<img
+  src="ev_chargers_norm_popden_small_multiples_2021_2024 (1).png"
+  height="655" width="805">
 
 ### Walking buffer from Office Locatios to Charging Stations, Irvine, CA
 <iframe src="ev_chargers_office_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_office_map.html)
