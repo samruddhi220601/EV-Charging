@@ -27,7 +27,7 @@ To contextualize charging infrastructure across California, the cleaned EV charg
 ### Cars per Household in California (Census tracts, 2019-2023 ACS Data)
 <img
   src="ca_cars_per_hh_fisherjenks_counties_quality.png"
-  height="755" width="905">
+  height="655" width="805">
   
 ### EV Chargers/Population Density
 <iframe src="ev_chargers_popden_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
