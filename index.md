@@ -19,3 +19,9 @@ Brief bullets of your workflow:
 4. Map layout & export
 5. <iframe src="ev_chargers_popden_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
 <iframe src="ca_cars_per_hh_fisherjenks_counties_quality.png" height="550" width="10%"></iframe>
+<img
+  src="ca_cars_per_hh_fisherjenks_counties_quality.png"
+  style="width:100%; max-width:1200px; height:auto; display:block; margin:0 auto;">
+<img
+  src="ev_chargers_orange_county.png"
+  style="width:100%; max-width:1200px; height:auto; display:block; margin:0 auto;">
