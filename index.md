@@ -32,6 +32,9 @@ To contextualize charging infrastructure across California, the cleaned EV charg
 ### EV Chargers/Population Density
 <iframe src="ev_chargers_popden_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
 
+### Walking buffer from Office Locatios to Charging Stations, Irvine, CA
+<iframe src="ev_chargers_office_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_office_map.html)
+
 ### 2 mile Buffer for EV Charging Stations in Orange County
 <img
   src="ev_chargers_orange_county.png"
