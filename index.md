@@ -27,7 +27,7 @@ To contextualize charging infrastructure across California, the cleaned EV charg
 ### Cars per Household in California (Census tracts, 2019-2023 ACS Data)
 <img
   src="ca_cars_per_hh_fisherjenks_counties_quality.png"
-  height="555" width="1605"></iframe>
+  height="555" width="1005">
   
 ### EV Chargers/Population Density
 <iframe src="ev_chargers_popden_map.html" height ="555" width="1205"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
@@ -35,4 +35,4 @@ To contextualize charging infrastructure across California, the cleaned EV charg
 ### 2 mile Buffer for EV Charging Stations in Orange County
 <img
   src="ev_chargers_orange_county.png"
-  height="555" width="1605"></iframe>
+  height="555" width="1605">
