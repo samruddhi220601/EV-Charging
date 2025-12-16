@@ -18,4 +18,4 @@ Brief bullets of your workflow:
 3. Spatial join / network analysis
 4. Map layout & export
 5. <iframe src="ev_chargers_popden_map.html" height ="555" width="1405"></iframe> You can explore this map [as its own web page here](ev_chargers_popden_map.html)
-<iframe src="ca_cars_per_hh_fisherjenks_counties_quality.png" height="650" width="80%"></iframe>
+<iframe src="ca_cars_per_hh_fisherjenks_counties_quality.png" height="650" width="50%"></iframe>
