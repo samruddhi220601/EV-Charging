@@ -12,7 +12,7 @@ Several tracts along the California coastline contain no permanent housing (e.g.
 
 To compute cars per household, the total estimated number of vehicles was approximated by combining ACS categories (1 vehicle, 2 vehicles, and 3-or-more vehicles) and dividing this by the total number of occupied households. Because both the numerator and denominator have associated margins of error (MOEs), the reliability of this ratio cannot be evaluated by simply dividing standard errors or using a naïve propagation formula.
 
-2. Interactive Map 1: The EV charger dataset used in this project was obtained from the California Energy Commission (energy.ca.gov), which provides statewide public and private charging infrastructure records. The raw dataset included stations from multiple years and formats, along with several partially reported 2025 entries. To ensure consistency, the dataset was cleaned by:
+2. Interactive Map: The EV charger dataset used in this project was obtained from the California Energy Commission (energy.ca.gov), which provides statewide public and private charging infrastructure records. The raw dataset included stations from multiple years and formats, along with several partially reported 2025 entries. To ensure consistency, the dataset was cleaned by:
 
 Removing incomplete or future-dated 2025 records
 
