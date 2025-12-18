@@ -7,14 +7,20 @@ This project examines EV infrastructure and its linkage to Orange County’s emp
 
 ## Data Sources
 #### Cars per Household: 
-Because the Census API was unavailable during the project timeline, data for vehicles per household at the census tract level for California were downloaded directly from the U.S. Census Bureau’s data portal. These tables originate from the ACS 5-year estimates (2019-2023) and include counts of households by number of vehicles available.
+Because the Census API was unavailable during the project timeline, data for vehicles per household at the census tract level for California were downloaded directly from the U.S. Census Bureau’s data portal. These tables originate from the ACS 5-year estimates (2019-2023) and include counts of households by number of vehicles available. 
+Specific table Numbers: B25044, B08141
+The most recent ACS release was 2019-2023 5 Year, downloaded November 2025
+Original Format was CSV obtained from data.census.go
+Tract shapefile source (TIGER/Line), join key (STATE+COUNTY+TRACT) ad the data quality was improved by removing zero-household tracts and coastal water polygons could be removed. Origially Tiger/Line shaefiles were in EPSG 4269 which were reprojected to the correct StatePlane EPSG:2230.
 
 Several tracts along the California coastline contain no permanent housing (e.g., beaches or offshore water polygons). These areas naturally lack household-level vehicle data and therefore appear as missing. To avoid misinterpreting these geographic artifacts as data gaps, these non-residential coastal tracts are to be removed from the final visualization.
 
 To compute cars per household, the total estimated number of vehicles was approximated by combining ACS categories (1 vehicle, 2 vehicles, and 3-or-more vehicles) and dividing this by the total number of occupied households. Because both the numerator and denominator have associated margins of error (MOEs), the reliability of this ratio cannot be evaluated by simply dividing standard errors or using a naïve propagation formula.
 
 ### EV Chargers per Population Density in California (2021-24) County Wise: 
-The EV charger dataset used in this project was obtained from the California Energy Commission (energy.ca.gov), which provides statewide public and private charging infrastructure records. The raw dataset included stations from multiple years and formats, along with several partially reported 2025 entries. To ensure consistency, the dataset was cleaned by:
+The EV charger dataset used in this project was obtained from the California Energy Commission (energy.ca.gov), which provides statewide public and private charging infrastructure records. The raw dataset included stations from multiple years and types of chargers, along with several partially reported 2025 entries. 
+The data was available in CSV format and is updated on a quaterly basis. The data accessed from this project was after Q3 of 2025. 
+To ensure consistency, the dataset was cleaned by:
 
 Removing incomplete or future-dated 2025 records
 
@@ -22,10 +28,10 @@ Dropping rows with missing geographic coordinates or essential charger attribute
 
 Standardizing county names and charger attributes
 
-To contextualize charging infrastructure across California, the cleaned EV charger dataset was joined with county-level population density data. This population dataset came from a county geodatabase containing area, population totals, and derived density measures. A shared county name field was used to merge the two datasets, enabling the creation of maps showing spatial patterns of charger concentration normalized by the underlying population distribution across counties. To show the growth of EV Charging infrastructure with each county of Califonia, small multiples were used to show change from 2021 to 2024. 
+To contextualize charging infrastructure across California, the cleaned EV charger dataset was joined with county-level population density data. This data was obtained from California Open Data and joined with a countywise geodatabase from ArcGIS Hub containing area, population totals, and derived density measures. The database was in the correct co-ordinate system and did not need any reprojection. A shared county name field was used to merge the two datasets, enabling the creation of maps showing spatial patterns of charger concentration normalized by the underlying population distribution across counties. To show the growth of EV Charging infrastructure with each county of Califonia, small multiples were used to show change from 2021 to 2024. 
 
 ### EV Chargers Buffer in Irvine, California: 
-This interactive map visualizes EV charging access relative to office locations using OpenStreetMap data obtained via OSMnx. The original dataset covered all of Orange County, but computing network-based walking isochrones for 5, 10, and 15 minutes around every office was slow. To keep analysis responsive while upholding policy relevance, the study zooms into Irvine. The reason for chooosing Irvine was its characteristic as an important highway-corridor having an employment cluster. This proved to be an ideal context to examine workplace-proximate charging.
+This interactive map visualizes EV charging access relative to office locations using OpenStreetMap data obtained via OSMnx. The original dataset covered all of Orange County, but computing network-based walking isochrones for 5, 10, and 15 minutes around every office was slow. This was the only critical data-related issue faced and the scope of the study was scaled down. To keep analysis responsive while upholding policy relevance, the study zooms into Irvine. The reason for chooosing Irvine was its characteristic as an important highway-corridor having an employment cluster. This proved to be an ideal context to examine workplace-proximate charging.
 
 The map consists of the following elements using lesson learnt from this class on Network Analysis and Geo-Processing tools. Walking-time buffers (5, 10, 15 min): Isochrones computed on the ‘walk’ network (not Euclidean circles), reflecting realistic pedestrian paths and barriers.
 
